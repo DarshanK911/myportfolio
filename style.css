@@ -6,7 +6,7 @@ body {
   background: linear-gradient(to right, hsla(0, 0%, 0%, 0.941), #41008b);
   scroll-behavior: smooth;
   align-items:center;
-  width:100%
+  width:120%
 }
 
 /* Gradient Text Helper */
