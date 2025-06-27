@@ -1,6 +1,5 @@
 /* Base Styles */
 body {
-  background-size:100%;
   margin: 0;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
@@ -143,7 +142,7 @@ section {
   opacity: 0;
   transform: scale(0.95) translateY(40px);
   transition: opacity 0.7s forwards, transform 0.7s ease;
-  width:120%;
+  width:100%;
   box-sizing:content-box;
   align-items:center;
   text-align: center;
