@@ -134,22 +134,25 @@ body.menu-open main {
 /* Sections */
 section {
   background: linear-gradient(to right, #070707, #3f0092);
-  border-radius: 0;
-  padding:30px 60px;
-  margin-bottom: 50px;
-  margin-right:0;
+  padding: 30px 60px;
+  margin: 0; /* Remove margins to allow true centering */
   box-shadow: 0 10px 25px rgb(0, 145, 255);
   backdrop-filter: blur(8px);
   opacity: 0;
   transform: scale(0.95) translateY(40px);
   transition: opacity 0.7s forwards, transform 0.7s ease;
-  width:100%;
-  box-sizing:content-box;
-  align-items:center;
-  justify-content:center;
+  width: 100%;
+  max-width: 900px; /* Limit max width for readability */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: #eee;
+  border-radius: 8px;
 }
+
 
 section.visible {
   animation: popUp 0.7s forwards;
