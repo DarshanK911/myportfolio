@@ -1,7 +1,6 @@
 /* Base Styles */
 body {
   margin: 0;
-  margin-left:30px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
   background: linear-gradient(to right, hsla(0, 0%, 0%, 0.941), #41008b);
