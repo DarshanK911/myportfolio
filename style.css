@@ -19,7 +19,7 @@ body {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  background-size: 200% 100%;
+  background-size:auto;
   animation: shine 10s linear infinite;
 }
 @keyframes shine {
