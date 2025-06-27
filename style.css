@@ -134,7 +134,7 @@ body.menu-open main {
 /* Sections */
 section {
   background: linear-gradient(to right, #070707, #3f0092);
-  padding: 30px 100px;
+  padding: 30px 200px;
   margin: 0; /* Remove margins to allow true centering */
   margin-bottom:60px;
   box-shadow: 0 10px 25px rgb(0, 145, 255);
