@@ -145,6 +145,7 @@ section {
   width:auto;
   box-sizing:content-box;
   align-items:center;
+  justify-content:center;
   text-align: center;
   color: #eee;
 }
