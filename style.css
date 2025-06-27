@@ -145,7 +145,8 @@ section {
   width: 100%;
   max-width: 100%; /* Limit max width for readability */
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  box-sizing:border-box;
   align-items: center;
   justify-content: center;
   text-align: center;
