@@ -133,7 +133,6 @@ body.menu-open main {
 
 /* Sections */
 section {
-  display:flex;
   background: linear-gradient(to right, #070707, #3f0092);
   border-radius: 0;
   padding:30px 60px;
