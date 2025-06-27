@@ -6,7 +6,6 @@ body {
   background: linear-gradient(to right, hsla(0, 0%, 0%, 0.941), #41008b);
   scroll-behavior: smooth;
   align-items:center;
-  width:120%
 }
 
 /* Gradient Text Helper */
@@ -136,7 +135,7 @@ body.menu-open main {
 section {
   background: linear-gradient(to right, #070707, #3f0092);
   border-radius: 0;
-  padding:flex;
+  padding:20px 40px;
   margin-bottom: 50px;
   box-shadow: 0 10px 25px rgb(0, 145, 255);
   backdrop-filter: blur(8px);
