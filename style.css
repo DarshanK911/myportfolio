@@ -143,7 +143,7 @@ section {
   opacity: 0;
   transform: scale(0.95) translateY(40px);
   transition: opacity 0.7s forwards, transform 0.7s ease;
-  width:auto;
+  width:100%;
   box-sizing:content-box;
   align-items:center;
   justify-content:center;
