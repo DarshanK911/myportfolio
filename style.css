@@ -151,7 +151,10 @@ section {
   color: #eee;
   border-radius: 8px;
   box-sizing: border-box;
+}section.fullscreen {
+  min-height: 100vh;
 }
+
 
 
 
