@@ -131,11 +131,10 @@ body.menu-open main {
   margin-left: 200px;
 }
 
-/* Sections */
 section {
   background: linear-gradient(to right, #070707, #3f0092);
   padding: 30px 60px;
-  margin: 0 auto 60px auto; /* Centers horizontally */
+  margin: 60px auto; /* Center the section itself horizontally */
   box-shadow: 0 10px 25px rgb(0, 145, 255);
   backdrop-filter: blur(8px);
   opacity: 0;
@@ -143,18 +142,18 @@ section {
   transition: opacity 0.7s forwards, transform 0.7s ease;
 
   width: 100%;
-  max-width: 1000px;         /* Prevents stretching on wide screens */
+  max-width: 1000px;           /* Ensures sections are not too wide on large screens */
+  min-height: 100vh;           /* Full screen height for vertical centering */
   display: flex;
   flex-direction: column;
-  align-items: center;        /* Centers contents horizontally */
-  justify-content: center;    /* Centers contents vertically if height allows */
+  align-items: center;         /* Center contents horizontally */
+  justify-content: center;     /* Center contents vertically */
   text-align: center;
   color: #eee;
   border-radius: 8px;
   box-sizing: border-box;
-
-  position: relative;         /* Needed if absolutely positioned content is added later */
 }
+
 section.fullscreen {
   min-height: 100vh;
 }
