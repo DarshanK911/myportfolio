@@ -125,18 +125,19 @@ body.menu-open main {
 }
 
 /* Section Styling */
+/* Section Styling */
 section {
   background: linear-gradient(to right, #070707, #3f0092);
   padding: 30px 60px;
-  margin: 40px auto; /* Center the section */
-  box-shadow: 0 0 30px rgba(0, 145, 255, 0.4); /* Smoothed glow */
+  margin: 40px auto;
+  box-shadow: 0 0 30px rgba(0, 145, 255, 0.4);
   backdrop-filter: blur(8px);
   opacity: 0;
   transform: scale(0.95) translateY(40px);
   transition: opacity 0.7s forwards, transform 0.7s ease;
   width: 100%;
   max-width: 1000px;
-  min-height: 100vh;
+  min-height: 100vh; /* Full height on desktop */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,6 +147,15 @@ section {
   border-radius: 8px;
   box-sizing: border-box;
 }
+
+@media (max-width: 768px) {
+  section {
+    min-height: auto;        /* Let height be flexible on small screens */
+    padding: 40px 20px;      /* Tighter padding on small screens */
+    margin: 20px auto;       /* Less margin */
+  }
+}
+
 
 section.fullscreen {
   min-height: 100vh;
