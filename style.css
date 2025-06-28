@@ -135,23 +135,27 @@ body.menu-open main {
 section {
   background: linear-gradient(to right, #070707, #3f0092);
   padding: 30px 60px;
-  margin: 0 auto 60px auto; /* Horizontally center section */
+  margin: 0 auto 60px auto; /* Centers horizontally */
   box-shadow: 0 10px 25px rgb(0, 145, 255);
   backdrop-filter: blur(8px);
   opacity: 0;
   transform: scale(0.95) translateY(40px);
   transition: opacity 0.7s forwards, transform 0.7s ease;
+
   width: 100%;
-  max-width: 1000px; /* Limit width for readability */
+  max-width: 1000px;         /* Prevents stretching on wide screens */
   display: flex;
   flex-direction: column;
-  align-items: center;      /* Center contents horizontally */
-  justify-content: center;  /* Center contents vertically */
+  align-items: center;        /* Centers contents horizontally */
+  justify-content: center;    /* Centers contents vertically if height allows */
   text-align: center;
   color: #eee;
   border-radius: 8px;
   box-sizing: border-box;
-}section.fullscreen {
+
+  position: relative;         /* Needed if absolutely positioned content is added later */
+}
+section.fullscreen {
   min-height: 100vh;
 }
 
