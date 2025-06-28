@@ -5,7 +5,7 @@ body {
   color: white;
   background: linear-gradient(to right, hsla(0, 0%, 0%, 0.941), #41008b);
   scroll-behavior: smooth;
-  align-items:center;
+  align-items: center;
 }
 
 /* Gradient Text Helper */
@@ -19,7 +19,7 @@ body {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  background-size:100% 100%;
+  background-size: 100% 100%;
   animation: shine 10s linear infinite;
 }
 @keyframes shine {
@@ -32,7 +32,6 @@ body {
 }
 
 header {
-  position:flex;
   top: 0;
   left: 0;
   width: auto;
@@ -48,8 +47,6 @@ header {
 header h1 {
   font-size: 24px;
   margin: 0;
-  color: white;
-  user-select: none;
   font-weight: 900;
   background: linear-gradient(90deg, #5100ff, #049fff, #9000ff);
   background-clip: text;
@@ -105,49 +102,45 @@ header h1 {
   text-decoration: none;
   font-weight: bold;
   padding: 10px 20px;
-  user-select: none;
   font-size: 16px;
 }
 
 .nav-menu a:hover,
 .nav-menu a:focus {
   background-color: #49006f;
-  outline: none;
   color: #0077ff;
 }
 
 /* Main content */
 main {
-  margin-top: 50px;
-  padding: 40px 20px;
+  padding: 20px;
   max-width: 1000px;
-  margin-left: 0;
-  transition: margin-left 0.3s ease;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
-/* Shift main content when menu open */
+/* Remove shift when menu open */
 body.menu-open main {
-  margin-left: 200px;
+  margin-left: 0 !important;
 }
 
+/* Section Styling */
 section {
   background: linear-gradient(to right, #070707, #3f0092);
   padding: 30px 60px;
-  margin: 60px auto; /* Center the section itself horizontally */
-  box-shadow: 0 10px 25px rgb(0, 145, 255);
+  margin: 40px auto; /* Center the section */
+  box-shadow: 0 0 30px rgba(0, 145, 255, 0.4); /* Smoothed glow */
   backdrop-filter: blur(8px);
   opacity: 0;
   transform: scale(0.95) translateY(40px);
   transition: opacity 0.7s forwards, transform 0.7s ease;
-
   width: 100%;
-  max-width: 1000px;           /* Ensures sections are not too wide on large screens */
-  min-height: 100vh;           /* Full screen height for vertical centering */
+  max-width: 1000px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;         /* Center contents horizontally */
-  justify-content: center;     /* Center contents vertically */
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: #eee;
   border-radius: 8px;
@@ -157,9 +150,6 @@ section {
 section.fullscreen {
   min-height: 100vh;
 }
-
-
-
 
 section.visible {
   animation: popUp 0.7s forwards;
@@ -192,7 +182,6 @@ section h2 {
   font-size: 2.5rem;
   margin-bottom: 25px;
   font-weight: 900;
-  user-select: none;
 }
 
 /* Paragraph text */
@@ -201,7 +190,6 @@ section p {
   line-height: 1.5;
   max-width: 800px;
   margin: 0 auto;
-  user-select: none;
   background: linear-gradient(to right, #ccc, #eee);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -223,7 +211,6 @@ section p {
   box-shadow: 0 0 10px rgb(255, 255, 255);
   width: 250px;
   text-align: left;
-  cursor: default;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -235,7 +222,6 @@ section p {
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  user-select: none;
 }
 
 .skill-box p {
@@ -243,7 +229,6 @@ section p {
   font-weight: 500;
   font-size: 0.95rem;
   margin-bottom: 0;
-  user-select: none;
 }
 
 .skill-box:hover {
@@ -262,13 +247,11 @@ section p {
   margin-left: auto;
   margin-right: auto;
   text-align: left;
-  user-select: none;
 }
 
 .project img {
   width: 100%;
   object-fit: cover;
-  user-select: none;
 }
 
 .project-info {
@@ -289,14 +272,12 @@ section p {
 .project-info p {
   font-weight: 500;
   margin-bottom: 10px;
-  user-select: none;
 }
 
 .project-info a {
   color: #00adee;
   font-weight: 700;
   text-decoration: none;
-  user-select: none;
 }
 
 .project-info a:hover,
@@ -317,7 +298,6 @@ section p {
 .social-links a {
   color: #ffd200;
   text-decoration: none;
-  user-select: none;
 }
 
 .social-links a:hover,
@@ -331,7 +311,6 @@ section p {
   position: relative;
   display: inline-block;
   margin-top: 15px;
-  user-select: none;
 }
 
 .dropbtn {
@@ -344,7 +323,6 @@ section p {
   cursor: pointer;
   font-weight: bold;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-  user-select: none;
   transition: background-color 0.3s ease;
 }
 
@@ -370,14 +348,11 @@ section p {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  font-weight: normal;
-  user-select: none;
 }
 
 .dropdown-content a:hover,
 .dropdown-content a:focus {
   background-color: #49006f;
-  outline: none;
 }
 
 .dropdown.show .dropdown-content {
@@ -397,9 +372,6 @@ section p {
     padding: 20px 10px;
     margin-left: 0 !important;
   }
-  body.menu-open main {
-    margin-left: 0 !important;
-  }
   .skill-box {
     width: 90%;
   }
@@ -407,6 +379,8 @@ section p {
     max-width: 100%;
   }
 }
+
+/* Footer */
 footer {
   background-color: rgb(37, 0, 63);
   color: #0080ff;
@@ -414,7 +388,6 @@ footer {
   padding: 20px 20px;
   font-weight: 600;
   font-size: 1rem;
-  user-select: none;
   box-shadow: 0 -3px 10px rgb(0, 123, 255);
   margin-top: 40px;
 }
