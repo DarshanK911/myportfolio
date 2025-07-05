@@ -34,7 +34,6 @@ body {
 header {
   top: 0;
   left: 0;
-  width: flex;
   background-color: rgb(22, 0, 41);
   display: flex;
   align-items: center;
