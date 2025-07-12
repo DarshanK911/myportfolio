@@ -48,14 +48,7 @@ const observer = new IntersectionObserver(entries => {
       entry.target.classList.add('visible');
       observer.unobserve(entry.target);
     }
-    
   });
 }, { threshold: 0.3 });
 
 sections.forEach(section => observer.observe(section));
-
-
-
-
-
-
