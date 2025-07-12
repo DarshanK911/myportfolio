@@ -124,7 +124,6 @@ body.menu-open main {
 }
 
 /* Section Styling */
-/* Section Styling */
 section {
   background: linear-gradient(to right, #070707, #3f0092);
   padding: 30px 60px;
@@ -136,7 +135,7 @@ section {
   transition: opacity 0.7s forwards, transform 0.7s ease;
   width: 100%;
   max-width: 1000px;
-  min-height: 100vh; /* Full height on desktop */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,15 +145,6 @@ section {
   border-radius: 8px;
   box-sizing: border-box;
 }
-
-@media (max-width: 768px) {
-  section {
-    min-height: auto;        /* Let height be flexible on small screens */
-    padding: 40px 20px;      /* Tighter padding on small screens */
-    margin: 20px auto;       /* Less margin */
-  }
-}
-
 
 section.fullscreen {
   min-height: 100vh;
@@ -387,6 +377,50 @@ section p {
   .project {
     max-width: 100%;
   }
+  section {
+    padding: 40px 20px;
+    min-height: auto;
+    text-align: center;
+  }
+}
+
+/* Desktop Profile Layout */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  gap: 30px;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+}
+
+@media (min-width: 1024px) {
+  .profile-section {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 60px 80px;
+  }
+
+  .profile-img {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 0;
+  }
+
+  .profile-content {
+    flex: 1;
+    padding-left: 40px;
+  }
 }
 
 /* Footer */
@@ -400,10 +434,3 @@ footer {
   box-shadow: 0 -3px 10px rgb(0, 123, 255);
   margin-top: 40px;
 }
-
-
-
-
-
-
-
