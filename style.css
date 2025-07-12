@@ -409,3 +409,13 @@ footer {
     display: none;
   }
 }
+
+/* --- New: Make sections fill horizontally on wide screens --- */
+@media (min-width: 1024px) {
+  section {
+    max-width: 100%;       /* remove max-width */
+    margin: 20px 0;        /* vertical margin only, no auto centering */
+    padding-left: 60px;    /* keep horizontal padding */
+    padding-right: 60px;
+  }
+}
